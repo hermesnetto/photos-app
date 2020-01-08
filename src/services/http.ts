@@ -1,8 +1,8 @@
 import { UploadResponse } from '../types';
-import { DEV_URL } from '../constants';
+import { TEST_URL } from '../constants';
 
 export const uploadPicture = async (formData: FormData): Promise<UploadResponse> => {
-  return await fetch(`${DEV_URL}/upload`, {
+  return await fetch(`${TEST_URL}/upload`, {
     method: 'POST',
     headers: {
       Accept: 'application/json',

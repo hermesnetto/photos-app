@@ -5,14 +5,14 @@ import { NavigationTabProp } from 'react-navigation-material-bottom-tabs';
 
 import { onSignIn } from '../services/auth';
 import { ROUTES } from '../types';
-import { DEV_URL } from '../constants';
+import { TEST_URL } from '../constants';
 import { MARGINS } from '../styles/variables';
 
 interface Props {
   navigation: NavigationTabProp;
 }
 
-const url = `${DEV_URL}/login`;
+const url = `${TEST_URL}/login`;
 
 export const LoginForm: React.FC<Props> = ({ navigation: { navigate } }) => {
   const [email, setEmail] = useState<string>('');

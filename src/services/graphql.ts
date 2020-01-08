@@ -1,10 +1,10 @@
 import ApolloClient from 'apollo-boost';
 
 import { getToken } from '../services/auth';
-import { DEV_URL } from '../constants';
+import { TEST_URL } from '../constants';
 
 export const client = new ApolloClient({
-  uri: `${DEV_URL}/graphql`,
+  uri: `${TEST_URL}/graphql`,
 
   request: async operation => {
     const token = await getToken();
